@@ -6,6 +6,7 @@ class SurahEntity {
   final String bengaliName;
   final String bengaliNameTranslation;
   final String revelationType;
+  final String bengaliRevelationType;
   final int numberOfAyahs;
   final int words;
   final int chars;
@@ -20,6 +21,7 @@ class SurahEntity {
     required this.bengaliName,
     required this.bengaliNameTranslation,
     required this.revelationType,
+    required this.bengaliRevelationType,
     required this.numberOfAyahs,
     required this.words,
     required this.chars,

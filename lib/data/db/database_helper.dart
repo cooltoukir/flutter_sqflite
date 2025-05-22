@@ -42,12 +42,13 @@ class DatabaseHelper {
     await db.execute('''
       CREATE TABLE surahs (
         number INTEGER PRIMARY KEY,
-        arabicName TEXT,
+        name TEXT,
         englishName TEXT,
         englishNameTranslation TEXT,
         bengaliName TEXT,
         bengaliNameTranslation TEXT,
         revelationType TEXT,
+        bengaliRevelationType TEXT,
         numberOfAyahs INTEGER,
         words INTEGER,
         chars INTEGER,
