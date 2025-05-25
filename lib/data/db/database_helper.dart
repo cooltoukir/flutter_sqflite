@@ -26,20 +26,6 @@ class DatabaseHelper {
 
   Future<void> _onCreate(Database db, int version) async {
     await db.execute('''
-      CREATE TABLE users(
-        userId INTEGER PRIMARY KEY AUTOINCREMENT,
-        userName TEXT
-      )
-    ''');
-
-    await db.execute('''
-      CREATE TABLE todos(
-        taskId INTEGER PRIMARY KEY AUTOINCREMENT,
-        content TEXT
-      )
-    ''');
-
-    await db.execute('''
       CREATE TABLE surahs (
         number INTEGER PRIMARY KEY,
         name TEXT,
